@@ -23,14 +23,14 @@ The scope is **existing stacks that predate the introduction of tag support (in 
 
 ```bash
 # Single stack, dry-run (default, read-only):
-./fix-tag-drift.sh <STACK_NAME>
+./tag-drift/fix-tag-drift.sh <STACK_NAME>
 
 # Single stack, actually apply tags:
-./fix-tag-drift.sh <STACK_NAME> --apply
+./tag-drift/fix-tag-drift.sh <STACK_NAME> --apply
 
 # Batch (edit the STACKS list inside the script first):
-./run-tag-fix-batch.sh           # dry-run
-./run-tag-fix-batch.sh --apply   # apply + drift detection + report
+./tag-drift/run-tag-fix-batch.sh           # dry-run
+./tag-drift/run-tag-fix-batch.sh --apply   # apply + drift detection + report
 ```
 
 ## Safety
